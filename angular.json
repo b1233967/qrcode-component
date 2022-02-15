@@ -105,12 +105,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "basehred": "/practices/qrcode-component",
-            "name": "Tay",
-            "email": "b1233967@gmail.com"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
