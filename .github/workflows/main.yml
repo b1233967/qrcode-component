@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,5 +28,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install and start angular project
         run: |
-              npm install
-              ng serve
+          npm install
+          npm run ng -- deploy --no-silent
